@@ -1,0 +1,354 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+.header-container {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info {
+  text-align: left;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.movie-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.movie-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.close-button {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.banner {
+  margin-top: 20px;
+  display: block;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.food-section {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.food-section h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: red;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tab {
+  padding: 10px 15px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background-color: red;
+  color: white;
+}
+
+.food-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.food-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+  }
+
+  .header-container {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .movie-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .movie-info {
+    text-align: left;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  .movie-info h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .movie-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  .close-button {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .banner {
+    margin-top: 20px;
+  }
+
+  .banner img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .food-section {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .food-section h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    color: red;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .tab {
+    padding: 10px 15px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .tab.active {
+    background-color: red;
+    color: white;
+  }
+
+  .food-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+  .food-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .food-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+
+  .food-details {
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  .food-details h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .food-details p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  background-color: white;
+}
+
+.food-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.food-item h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.food-item p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.add-button {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.2s ease, color 0.2s ease;
+}
+.booking-summary {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.seat-summary p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+.summary-details p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.summary-details hr {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+.donation {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.donation-toggle {
+  color: red;
+  cursor: pointer;
+}
+
+.ticket-type {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.ticket-type label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.ticket-type input {
+  margin-right: 10px;
+}

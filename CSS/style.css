@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  color: #333;
+  margin-left: 50px;
+}
+
+.navi1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+}
+
+.navi1 .left1 {
+  display: flex;
+  align-items: center;
+}
+
+.navi1 img {
+  height: 75px;
+  margin-right: 15px;
+}
+
+.navi1 input {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.navi1 input::placeholder {
+  font-size: 14px;
+  color: #888;
+}
+
+.navi1 .right1 {
+  display: flex;
+  align-items: center;
+}
+
+.navi1 .location {
+  font-size: 16px;
+  margin-right: 20px;
+  color: white;
+}
+
+.navi1 button {
+  background-color: white;
+  color: #f84464;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navi1 button:hover {
+  background-color: #f8d1dc;
+}
+.navi2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.navi2 .left2,
+.navi2 .right2 {
+  display: flex;
+  align-items: center;
+}
+.navi2 p {
+  margin: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.main {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.main img {
+  width: 100%;
+  height: auto;
+}
+.movies {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.recommendedmovies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.recommendedmovies {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.recommendedmovies-item {
+  text-align: center;
+}
+.recommendedmovies img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.recommendedmovies img:hover {
+  transform: scale(1.05);
+}
+.recommendedmovies-item h3 {
+  font-size: 16px;
+  margin-top: 8px;
+}
+.recommendedmovies-item p {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+.scroll-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  border-radius: 50%;
+}
+.scroll-btn.left {
+  left: 0;
+}
+.scroll-btn.right {
+  right: 0;
+}
+.Events {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.Events h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.image-container img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  margin: 10px;
+  padding: 5px;
+}
+
+.scroll-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.scroll-btn.left {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.scroll-btn.right {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .recommendedmovies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recommendedmovies img {
+    height: 150px;
+  }
+}
+.Premiere {
+  background-color: #1c1e26;
+  padding: 40px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.Premiere h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.Premiere p {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.card div {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #1c1e26;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+}
+
+button h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+button p {
+  font-size: 14px;
+  color: #888;
+}
+
+.footer {
+  background-color: #1c1c1c;
+  color: #888;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  max-height: 40px;
+  display: inline-block;
+}
+
+.line {
+  width: 20%;
+  border: none;
+  border-top: 1px solid #555;
+}
+
+.icon-section {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon-section i {
+  font-size: 20px;
+  background-color: #2c2c2c;
+  color: #888;
+  padding: 10px;
+  border-radius: 50%;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.icon-section i:hover {
+  color: white;
+  background-color: #e50914;
+}
+
+.bottom-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+  line-height: 1.6;
+}

@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+.header-container {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+.movie-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.movie-info {
+  text-align: left;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.movie-info h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.movie-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.ticket-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ticket-button {
+  font-size: 0.8rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.close-button {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.timing-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.timing-btn {
+  background-color: white;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  font-size: 0.55rem;
+  text-align: center;
+  color: #4caf50;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 75px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timing-btn.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.timing-btn:hover {
+  background-color: #c8e6c9;
+}
+
+.seat-section {
+  margin-bottom: 20px;
+}
+
+.seat-section h3 {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 10px;
+  margin-left: 280px;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+}
+
+.row-label {
+  margin-left: 300px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.seats {
+  display: flex;
+  gap: 5px;
+  margin-left: 450px;
+  flex-wrap: wrap;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #4caf50;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.seat.available:hover {
+  background-color: #c8e6c9;
+}
+
+.seat.available {
+  color: #4caf50;
+}
+
+.seat.selected {
+  background-color: rgb(47, 172, 47);
+  color: white;
+}
+
+.seat.sold {
+  background-color: #e0e0e0;
+  color: #777;
+  cursor: not-allowed;
+}
+.row .seat:nth-child(3) {
+  margin-right: 50px;
+}
+.row .seat:nth-child(16) {
+  margin-right: 50px;
+}
+#proceed-to-pay {
+  margin-left: 35%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  font-size: 16px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.legend-box.available {
+  background-color: white;
+  border: 1px solid #4caf50;
+}
+
+.legend-box.selected {
+  background-color: #4caf50;
+}
+
+.legend-box.sold {
+  background-color: #e0e0e0;
+}

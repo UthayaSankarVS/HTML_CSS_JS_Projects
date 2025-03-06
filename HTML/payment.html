@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/payment.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="movie-header">
+        <div class="movie-info">
+          <h2>Amaran</h2>
+          <p>AGS Cinemas OMR: Navlur | Today, 14 Dec, 10:40 AM</p>
+        </div>
+        <div>
+          <button class="close-button">✕</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img
+        src="../Images/payment image.avif"
+        alt="Unlock the tastiest binges!"
+      />
+    </div>
+    <div class="container">
+      <div class="food-section">
+        <h3>Grab a <span class="highlight">bite!</span></h3>
+        <p>Prebook Your Meal and Save More!</p>
+        <div class="tabs">
+          <button class="tab active">ALL</button>
+          <button class="tab">POPCORN</button>
+          <button class="tab">BEVERAGES</button>
+          <button class="tab">DESSERTS</button>
+        </div>
+
+        <div class="food-items">
+          <div class="food-item">
+            <img src="../Images/popcorn.avif" alt="Regular Popcorn" />
+            <h4>Regular Popcorn</h4>
+            <p>₹80</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/coffee.avif" alt="Coffee" />
+            <h4>Coffee</h4>
+            <p>₹40</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/water bottle.avif" alt="Water Bottle" />
+            <h4>Water Bottle</h4>
+            <p>₹20</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/donut.avif" alt="Chocolate Donut" />
+            <h4>Chocolate Donut</h4>
+            <p>₹60</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/icecream.avif" alt="Ice Cream Single Scoop" />
+            <h4>Ice Cream Single Scoop</h4>
+            <p>₹70</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/rose milk.avif" alt="Rose Milk" />
+            <h4>Rose Milk</h4>
+            <p>₹60</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/black forest.avif" alt="Black Forest" />
+            <h4>Black Forest</h4>
+            <p>₹70</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/badam milk.avif" alt="Badam Milk" />
+            <h4>Badam Milk</h4>
+            <p>₹60</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img src="../Images/coke.avif" alt="Cold Drink Can" />
+            <h4>Cold Drink Can 330ml</h4>
+            <p>₹70</p>
+            <button class="add-button">Add</button>
+          </div>
+          <div class="food-item">
+            <img
+              src="../Images/monster engery drink.avif"
+              alt="Monster Energy Drink"
+            />
+            <h4>Monster Energy Drink</h4>
+            <p>₹200</p>
+            <button class="add-button">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-summary">
+        <h3>Booking Summary</h3>
+        <div class="seat-summary">
+          <p>
+            <strong>Seats</strong> -
+            <span id="selected-seats">No seats selected</span>
+          </p>
+        </div>
+        <div class="summary-details">
+          <p>Subtotal: <span id="subtotal">₹0.00</span></p>
+          <p>Convenience Fees: <span id="convenience-fees">₹0.00</span></p>
+          <hr />
+          <p>
+            <strong>Amount Payable:</strong> <span id="total-price">₹0.00</span>
+          </p>
+        </div>
+        <div class="donation">
+          <p>
+            Donate to BookAChange
+            <span class="donation-toggle">Add ₹2</span>
+          </p>
+        </div>
+        <h4>Select Ticket Type</h4>
+        <div class="ticket-type">
+          <label>
+            <input type="radio" name="ticket-type" checked />
+            M-Ticket
+          </label>
+          <label>
+            <input type="radio" name="ticket-type" />
+            Box Office Pickup
+          </label>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/payment.js"></script>
+  </body>
+</html>

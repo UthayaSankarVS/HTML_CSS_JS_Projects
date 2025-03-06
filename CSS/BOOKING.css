@@ -1,0 +1,138 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#background-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 10px;
+  width: 380px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.scooter-img {
+  width: 60px;
+  margin: 10px 0;
+}
+
+.seat-count {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.seat-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.seat-btn.selected {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+.seat-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+.pricing-option {
+  text-align: center;
+}
+
+.category {
+  font-weight: bold;
+  display: block;
+  color: #333;
+}
+
+.price {
+  display: block;
+  margin-top: 5px;
+  color: #333;
+}
+
+.status {
+  font-weight: bold;
+  margin-top: 3px;
+  display: block;
+}
+
+.available {
+  color: #4caf50;
+}
+
+.sold-out {
+  color: #f44336;
+}
+
+.select-btn {
+  background-color: #ff3366;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.select-btn:hover {
+  background-color: #ff6680;
+}

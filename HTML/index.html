@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navi1">
+      <div class="left1">
+        <img src="../Images/bookmyshow-logo-vector.png" alt="" />
+        <input
+          type="text"
+          placeholder="Search for Movies,Events,plays,Sports and Activites"
+          onclick="location.href='search.html'"
+        />
+      </div>
+      <div class="right1">
+        <h4 class="location">Trichy</h4>
+        <button>Sign In</button>
+      </div>
+    </nav>
+    <nav class="navi2">
+      <div class="left2">
+        <p>Movies</p>
+        <p>Stream</p>
+        <p>Events</p>
+        <p>Plays</p>
+        <p>Sports</p>
+        <p>Activities</p>
+      </div>
+      <div class="right2">
+        <p>ListYourShow</p>
+        <p>Corporates</p>
+        <p>Offers</p>
+        <p>Gift Cards</p>
+      </div>
+    </nav>
+    <div class="carousel-container">
+      <div class="main">
+        <img src="../Images/slid.4.avif" alt="" />
+        <img src="../Images/slid.2.avif" alt="" />
+        <img src="../Images/slid.3.avif" alt="" />
+      </div>
+    </div>
+    <h1>Recommended movies</h1>
+    <div class="recommendedmovies-container">
+      <button
+        class="scroll-btn left"
+        id="recommended-left"
+        onclick="scrollRecommendedLeft()"
+      >
+        ‹
+      </button>
+      <div class="recommendedmovies">
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/Amaran.avif"
+            alt=""
+            onclick="location.href='amaran.html'"
+          />
+          <h3>Amaran</h3>
+          <p>Action/Drama/Thriller</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/kanguva.avif"
+            alt=""
+            onclick="location.href='kanguva.html'"
+          />
+          <h3>Kanguva</h3>
+          <p>Action/Adventure/Fantasy</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/lucky basker.avif"
+            alt=""
+            onclick="location.href='luckybasker.html'"
+          />
+          <h3>Lucky Baskhar</h3>
+          <p>Crime/Drama/Thriller</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/romance.avif"
+            alt=""
+            onclick="location.href='romance.html'"
+          />
+          <h3>Romance</h3>
+          <p>Drama/Romantic</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/Neeraigal mooru.avif"
+            alt=""
+            onclick="location.href='neeraigal.html'"
+          />
+          <h3>Nirangal Moondru</h3>
+          <p>Crime/Drama/Thriller</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/jollyo gymkhana.avif"
+            alt=""
+            onclick="location.href='jollyogymkhana.html'"
+          />
+          <h3>Jollyo Gymkhana</h3>
+          <p>Action/Drama/Thriller</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/sookshadarshini.avif"
+            alt=""
+            onclick="location.href='sookshadarshini.html'"
+          />
+          <h3>Sookshadarshini</h3>
+          <p>Family/Thriller</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/gladitor.avif"
+            alt=""
+            onclick="location.href='gladitor.html'"
+          />
+          <h3>Gladitor II</h3>
+          <p>Action/Adventure/Drama</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/zebra.avif"
+            alt=""
+            onclick="location.href='zebra.html'"
+          />
+          <h3>Zebra</h3>
+          <p>Action/Comedy/Crime/Thriller</p>
+        </div>
+        <div class="recommendedmovies-item">
+          <img
+            src="../Images/wicked.avif"
+            alt=""
+            onclick="location.href='wicked.html'"
+          />
+          <h3>Wicked</h3>
+          <p>Fantasy/Musical</p>
+        </div>
+      </div>
+      <button
+        class="scroll-btn right"
+        id="recommended-right"
+        onclick="scrollRecommendedRight()"
+      >
+        ›
+      </button>
+    </div>
+
+    <div class="Banner">
+      <img src="../Images/Banner.avif" alt="" />
+    </div>
+    <h2>Best Of Live Events</h2>
+    <div class="Events">
+      <div class="card">
+        <button class="scroll-btn left" onclick="scrollLeft()">‹</button>
+        <img src="../Images/b1.avif" alt="" />
+        <img src="../Images/b2.avif" alt="" />
+        <img src="../Images/b3.avif" alt="" />
+        <img src="../Images/b4.avif" alt="" />
+        <img src="../Images/b5.avif" alt="" />
+        <img src="../Images/b6.avif" alt="" />
+        <img src="../Images/b7.avif" alt="" />
+        <img src="../Images/b8.avif" alt="" />
+        <button class="scroll-btn right" onclick="scrollRight()">›</button>
+      </div>
+    </div>
+
+    <div class="Premiere">
+      <h2>PREMIERE</h2>
+      <p>Watch New Movies at home, every Friday</p>
+      <h2>Premiere</h2>
+      <p>Brand new releases, every Friday</p>
+      <div class="card">
+        <div>
+          <img src="../Images/p1.avif" alt="" />
+          <button class="p1">
+            <h2>Girl YOU Know it's True</h2>
+            <p>English</p>
+          </button>
+        </div>
+        <div>
+          <img src="../Images/p2.avif" alt="" />
+          <button class="p2">
+            <h2>Joker: Folie a Deux (preview)</h2>
+            <p>English</p>
+          </button>
+        </div>
+        <div>
+          <img src="../Images/p3.avif" alt="" />
+          <button class="p3">
+            <h2>Joker: Folie a Deux</h2>
+            <p>English</p>
+          </button>
+        </div>
+        <div>
+          <img src="../Images/p4.avif" alt="" />
+          <button class="p4">
+            <h2>Glassmates</h2>
+            <p>Tamil</p>
+          </button>
+        </div>
+        <div>
+          <img src="../Images/p5.avif" alt="" />
+          <button class="p5">
+            <h2>Joker: 2 Film Collection</h2>
+            <p>English</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="top-section">
+        <hr class="line" />
+        <img
+          src="../Images/bookmyshow-logo-vector.png"
+          alt="BookMyShow Logo"
+          class="logo"
+        />
+        <hr class="line" />
+      </div>
+      <div class="icon-section">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="bottom-text">
+        Copyright 2024 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+        <br />
+        The content and images used on this site are copyright protected and
+        copyrights vest with the respective owners. The usage of the content and
+        images on this website is intended to promote the works and no
+        endorsement of the artist shall be implied. Unauthorized use is
+        prohibited and punishable by law.
+      </div>
+    </div>
+  </body>
+  <script src="../JS/main.js" defer></script>
+</html>
